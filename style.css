@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 473.831px;
+  height: 634.303px;
+  border-radius: 12px;
+  border: 1px solid;
+  background: #fff;
+}
+.container-information {
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  gap: 14.5px;
+}
+.container-information p:first-child {
+  width: 318.878px;
+  font-family: "Noto Sans", sans-serif;
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.63px;
+}
+.container-information p:last-child {
+  width: 318.878px;
+  color: #333;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+.container-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14.5px;
+}
+::placeholder {
+  color: #828282;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+.container-form > input {
+  width: 356.481px;
+  height: 48px;
+
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+}
+.container-form > button {
+  width: 356.481px;
+  height: 38px;
+  border-radius: 8px;
+  background: var(--blue-1, #2f80ed);
+  border-style: none;
+  font-family: "Noto Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.contianer-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  width: 356.481px;
+  gap: 23px;
+
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.container-social {
+  display: flex;
+ 
+  gap: 21px;
+}
+.container-social > div {
+  border-radius: 50px;
+  border: 1px solid;
+  width: 42px;
+  height: 42px;
+  stroke-width: 1px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.container-social > div > img {
+  width: 18px;
+  height: 18px;
+}
