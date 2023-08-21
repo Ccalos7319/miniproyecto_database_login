@@ -26,7 +26,22 @@ if (!isset($_SESSION["user_data"])) {
                 <p>devchallenges</p>
             </div>
             <div class="container-menu">
-                <img src="" alt="imagen">
+            <?php
+                    require_once("../handle_db/conection.php");
+                    $idUsers = intval($_SESSION["user_data"]["id_user"]);
+                    $stmt = $mysqli->query("SELECT id_user,imagenblob FROM users Where id_user = $idUsers ;");
+
+                    while ($row = $stmt->fetch_assoc()) {
+                        if (isset($row["imagenblob"])) {
+                            $dataImg = base64_encode($row["imagenblob"]);
+                            echo "
+                <img src='data:image/jpg;base64, $dataImg'>
+            ";
+                        } else {
+                            echo "No has subido una imagen ";
+                        }
+                    }
+                    ?>
                 <p><?php echo $_SESSION["user_data"]["nombre"]   ?></p>
                 <img id="despliegue" src="../imagen/vector.png" alt="">
 
@@ -74,7 +89,22 @@ if (!isset($_SESSION["user_data"])) {
             <div class="containerProfile">
                 <div class="info">
                     <label for="photo">PHOTO</label>
-                    <img src="" alt="">
+                    <?php
+                    require_once("../handle_db/conection.php");
+                    $idUsers = intval($_SESSION["user_data"]["id_user"]);
+                    $stmt = $mysqli->query("SELECT id_user,imagenblob FROM users Where id_user = $idUsers ;");
+
+                    while ($row = $stmt->fetch_assoc()) {
+                        if (isset($row["imagenblob"])) {
+                            $dataImg = base64_encode($row["imagenblob"]);
+                            echo "
+                <img src='data:image/jpg;base64, $dataImg'>
+            ";
+                        } else {
+                            echo "No has subido una imagen ";
+                        }
+                    }
+                    ?>
                 </div>
                 <div class="info">
                     <label for="name">NAME</label>

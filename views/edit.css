@@ -82,12 +82,17 @@
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.2);
 }
-.container-img > a {
-  text-decoration: none;
-  color: #828282;
+.container-img > label {
+ color: #828282;
   font-family: "Noto Sans", sans-serif;
   font-size: 13px;
   font-weight: 500;
+  cursor: pointer;
+}
+.container-img > input {
+  display: none;
+  
+ 
 }
 .container-input {
   display: flex;
