@@ -66,7 +66,7 @@ $data = $_SESSION["user_data"];
             <div class="line"></div>
             <div class="exit">
                 <img src="../imagen/exit.png" alt="logout">
-                <a href="">Logout</a>
+                <a href="../handle_db/logout.php">Logout</a>
             </div>
         </div>
     </head>
@@ -98,18 +98,20 @@ $data = $_SESSION["user_data"];
                     $stmt = $mysqli->query("SELECT id_user,imagenblob FROM users Where id_user = $idUsers ;");
 
                     while ($row = $stmt->fetch_assoc()) {
-                        if (isset($row["imagenblob"])) {
+                        if (isset($row["imagenblob"])  ) {
                             $dataImg = base64_encode($row["imagenblob"]);
                             echo "
                 <img src='data:image/jpg;base64, $dataImg'>
             ";
                         } else {
-                            echo "No has subido una imagen ";
+                            ?>
+                            <img src="../imagen/user.png" alt="imagenuser">
+                            <?php
                         }
                     }
                     ?>
 
-
+                    
 
 
                     <label for="file-input">CHANGE PHOTO</label>
@@ -146,6 +148,13 @@ $data = $_SESSION["user_data"];
         </div>
 
     </section>
+     <footer class="containerFooter">
+        <div class="footer">
+            <p>created by CarlosValencia</p>
+            <p>devChallenges.io</p>
+        </div>
+
+    </footer>
 </body>
 
 </html>

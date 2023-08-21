@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-<div class="container-principal">
-        <img src="" alt="">
+    
+    <div class="container-principal">
+        <div class="logo">
+            <img src="../imagen/devchallegues.png" alt="logo">
+            <p>devchallenges</p>
+        </div>
         <h2>Login</h2>
         <form class="container-form" action="../handle_db/login_db.php" method="post">
 
-            <input type="email" name="email" placeholder="email">
-            <input type="text" name="contrasena" placeholder="Password">
+        <div class="container-Ingreso">
+                <img src="../imagen/email.png" alt="email">
+                <input type="email" name="email" placeholder="email">
+            </div>
+            <div class="container-Ingreso">
+                <img src="../imagen/look.png" alt="">
+                <input type="password" name="contrasena" placeholder="Password">
+            </div>
 
             <button type="submit">Start coding now</button>
 
@@ -39,7 +51,14 @@
         </footer>
     </div>
 
+    <footer class="containerFooter">
+        <div class="footer">
+            <p>created by CarlosValencia</p>
+            <p>devChallenges.io</p>
+        </div>
 
-    
+    </footer>
+
 </body>
+
 </html>

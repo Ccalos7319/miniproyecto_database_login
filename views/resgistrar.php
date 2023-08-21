@@ -10,6 +10,10 @@
 
 <body>
     <div class="container-principal">
+        <div class="logo">
+            <img src="../imagen/devchallegues.png" alt="logo">
+            <p>devchallenges</p>
+        </div>
         <img src="" alt="">
         <div class="container-information">
             <p>Join thousands of learners from around the world</p>
@@ -17,9 +21,15 @@
         </div>
 
         <form class="container-form" action="../handle_db/registrer_db.php" method="post">
-
-            <input type="email" name="email" placeholder="email">
-            <input type="password" name="contrasena" placeholder="Password">
+            <div class="container-Ingreso">
+                <img src="../imagen/email.png" alt="email">
+                <input type="email" name="email" placeholder="email">
+            </div>
+            <div class="container-Ingreso">
+                <img src="../imagen/look.png" alt="">
+                <input type="password" name="contrasena" placeholder="Password">
+            </div>
+            
 
             <button type="submit">Start coding now</button>
 
@@ -44,6 +54,13 @@
             <p>Adready a member? <a href="../views/login.php">Login</a> </p>
         </footer>
     </div>
+    <footer class="containerFooter">
+        <div class="footer">
+            <p>created by CarlosValencia</p>
+            <p>devChallenges.io</p>
+        </div>
+
+    </footer>
 
 </body>
 

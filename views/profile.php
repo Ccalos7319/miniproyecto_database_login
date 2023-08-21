@@ -63,7 +63,7 @@ if (!isset($_SESSION["user_data"])) {
             <div class="line"></div>
             <div class="exit">
                 <img src="../imagen/exit.png" alt="logout">
-                <a href="">Logout</a>
+                <a href="../handle_db/logout.php">Logout</a>
             </div>
         </div>
     </head>
@@ -76,7 +76,7 @@ if (!isset($_SESSION["user_data"])) {
     <section class="section">
         <div class="containerInfo">
 
-            <form class="containerSubTitulo" action="./edit.php">
+            <form class="containerSubTitulo" action="./edit.php" >
                 <div>
                     <p>Profile</p>
                     <p>Some info may be visible to other people</p>
