@@ -13,7 +13,7 @@
         <form class="container-form" action="../handle_db/login_db.php" method="post">
 
             <input type="email" name="email" placeholder="email">
-            <input type="password" name="contrasena" placeholder="Password">
+            <input type="text" name="contrasena" placeholder="Password">
 
             <button type="submit">Start coding now</button>
 
@@ -35,8 +35,11 @@
                 </div>
 
             </div>
-            <p>Don’t have an account yet? <a href="">Register</a> </p>
+            <p>Don’t have an account yet? <a href="../views/resgistrar.php">Register</a> </p>
         </footer>
     </div>
+
+
+    
 </body>
 </html>

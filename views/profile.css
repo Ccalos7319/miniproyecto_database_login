@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-head {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+}
+.logo {
+  width: 130.174px;
+  height: 30px;
+  display: flex;
+  font-size: 25px;
+}
+.container-menu {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  position: relative;
+  
+}
+.container-menu > img:first-child {
+  width: 32px;
+  height: 36.69px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.container-menu > img:last-child {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.container-menu p {
+  color: #333;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+/* estilo al menu desplegable */
+#menu {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 188px;
+  height: 174px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+ margin-left: 72%;
+ margin-top: 35px;
+}
+#menu.active {
+  display: flex;
+}
+#menu img {
+  width: 20px;
+  height: 20px;
+}
+.cajamenu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 164.118px;
+  height: 39.151px;
+  border-radius: 12px;
+  background: #fafafb;
+  color: #4f4f4f;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+.line {
+  border-bottom: 1px solid #e0e0e0;
+  width: 164.118px;
+  height: 1px;
+}
+.exit {
+  display: flex;
+  align-items: center;
+  text-align: end;
+  gap: 10px;
+}
+.exit > a {
+  color: #eb5757;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  gap: 8px;
+  padding-top: 100px;
+  padding-bottom: 44px;
+}
+.titulo p:first-child {
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.titulo p:last-child {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.section {
+  display: flex;
+  justify-content: center;
+}
+.containerInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  width: 845.911px;
+  height: 580.543px;
+}
+.containerSubTitulo {
+  display: flex;
+  justify-content: space-around;
+  gap: 340px;
+  width: 845.911px;
+  height: 60px;
+
+  border-bottom: 1px solid #e0e0e0;
+}
+.containerSubTitulo > div p:first-child {
+  color: #000;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.84px;
+}
+.containerSubTitulo > div p:last-child {
+  color: #828282;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.455px;
+}
+.containerSubTitulo div:last-child > button {
+  width: 95.343px;
+  height: 38px;
+  border-radius: 12px;
+  border: 1px solid #828282;
+  color: #828282;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  cursor: pointer;
+}
+.containerProfile {
+  width: 845.911px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.info {
+  width: 845.911px;
+  height: 80px;
+  padding-left: 49.3px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 200px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.info > img {
+  width: 72px;
+  height: 72px;
+}
+.info > label {
+  color: #bdbdbd;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.info > p {
+  color: #333;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.containerFooter {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+.footer {
+  width: 845.911px;
+  display: flex;
+  justify-content: space-between;
+  color: #828282;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

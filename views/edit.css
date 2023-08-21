@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-Principal-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.back {
+  display: flex;
+  gap: 9px;
+  text-align: end;
+  width: 845.911px;
+  color: #2d9cdb;
+  font-family: "Noto Sans", sans-serif;
+  padding-bottom: 24px;
+  font-size: 18px;
+  
+}
+.back > a{
+    text-decoration: none;
+    color: #2d9cdb;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.sub-container {
+  width: 845.911px;
+  height: 900.563px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  padding-left: 45px;
+  padding-top: 30px;
+}
+
+.info-edit p:first-child {
+  color: #000;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.info-edit p:last-child {
+  color: #828282;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+.container-form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.container-form > button {
+  width: 82px;
+  height: 38px;
+  border-radius: 8px;
+  border: none;
+  background: #2f80ed;
+  color: #fff;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.container-img {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 27.5px;
+}
+.container-img > img {
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.container-img > a {
+  text-decoration: none;
+  color: #828282;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+.container-input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.container-input label {
+  color: #4f4f4f;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+.container-input input {
+  width: 416.932px;
+  height: 52px;
+  border-radius: 12px;
+  border: 1px solid #828282;
+}
+.contaier-input-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.contaier-input-bio label {
+  color: #4f4f4f;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+.contaier-input-bio input {
+  width: 416.932px;
+  height: 91.578px;
+  border-radius: 12px;
+  border: 1px solid #828282;
+}

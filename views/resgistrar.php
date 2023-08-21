@@ -41,7 +41,7 @@
                 </div>
 
             </div>
-            <p>Adready a member? <a href="">Login</a> </p>
+            <p>Adready a member? <a href="../views/login.php">Login</a> </p>
         </footer>
     </div>
 
